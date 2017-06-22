@@ -4,20 +4,19 @@
 LIS 2360:  Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+June 21 2017
 
 ### Student Name:  
-(First and Last Name)
+Ryan Lindner
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+Create a Javascript application that would calculate the tax owed to the government and the tax bracket of someone based on the amount of money they make.
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://ryanlindner.github.io/lesson5_javascript2/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. We learned about accessing an element by its id and how to change the HTML content of the element
+2. We learned how to incorporate "if else" statements into our code to make the code "intelligent" so it can make decisions
+3. We learned about tax brackets and how taxes are calculated based upon the amount of money earned
 

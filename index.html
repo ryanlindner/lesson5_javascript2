@@ -7,8 +7,8 @@
       Project Title: Income Tax Calculator 
       Filename: index.html
 
-      Author: 
-      Date:   
+      Author: Ryan Lindner
+      Date:   June 21, 2017
    -->
    <meta charset="utf-8" />
    <meta id="viewport" content="width=device-width, initial-scale=1.0">
@@ -176,7 +176,55 @@
            
           else if(status == 1) {
                 //INSERT YOUR CODE BELOW
+  var bracket_10_max = 18550;
+  var bracket_15_max = 75300;
+  var bracket_25_max = 151900;
+  var bracket_28_max = 231450;
+  var bracket_33_max = 413350;
+  var bracket_35_max = 466950;
   
+// if in 10% tax bracket
+  if (income <= bracket_10_max){
+    tax = income * 0.10;
+    taxRate = 10;
+  }
+// if in 15% tax bracket
+  else if (income <= bracket_15_max) {
+    tax = bracket_10_max * 0.10 + (income - bracket_10_max) * 0.15;
+    taxRate = 15;
+  }
+// if in 25% tax bracket
+  else if (income <= bracket_25_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 + (income - bracket_15_max) * 0.25;
+    taxRate = 25;
+  }
+// if in 28% tax bracket
+  else if (income <= bracket_28_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (income - bracket_25_max) * 0.28;
+    taxRate = 28;
+  }
+// if in 33% tax bracket
+  else if (income <= bracket_33_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+          (income - bracket_28_max) * 0.33;
+    taxRate = 33;
+  }
+// if in 35% tax bracket
+  else if (income <= bracket_35_max) {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (income - bracket_33_max) * 0.35;
+     taxRate = 35;
+  }
+// if in 39.6% tax bracket
+  else {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (bracket_35_max - bracket_33_max ) * 0.35 + (income - bracket_35_max) * .396;
+     taxRate = 39.6;
+  }//end of nested if
   
   
   
@@ -197,7 +245,55 @@
                  
           else if(status == 2) {
                 //INSERT YOUR CODE BELOW
-
+ var bracket_10_max = 9275;
+  var bracket_15_max = 37650;
+  var bracket_25_max = 75950;
+  var bracket_28_max = 115725;
+  var bracket_33_max = 206675;
+  var bracket_35_max = 233475;
+  
+// if in 10% tax bracket
+  if (income <= bracket_10_max){
+    tax = income * 0.10;
+    taxRate = 10;
+  }
+// if in 15% tax bracket
+  else if (income <= bracket_15_max) {
+    tax = bracket_10_max * 0.10 + (income - bracket_10_max) * 0.15;
+    taxRate = 15;
+  }
+// if in 25% tax bracket
+  else if (income <= bracket_25_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 + (income - bracket_15_max) * 0.25;
+    taxRate = 25;
+  }
+// if in 28% tax bracket
+  else if (income <= bracket_28_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (income - bracket_25_max) * 0.28;
+    taxRate = 28;
+  }
+// if in 33% tax bracket
+  else if (income <= bracket_33_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+          (income - bracket_28_max) * 0.33;
+    taxRate = 33;
+  }
+// if in 35% tax bracket
+  else if (income <= bracket_35_max) {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (income - bracket_33_max) * 0.35;
+     taxRate = 35;
+  }
+// if in 39.6% tax bracket
+  else {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (bracket_35_max - bracket_33_max ) * 0.35 + (income - bracket_35_max) * .396;
+     taxRate = 39.6;
+  }//end of nested if
              
              
              
@@ -218,7 +314,55 @@
           
           else if(status == 3) {
                 //INSERT YOUR CODE BELOW
- 
+  var bracket_10_max = 13250;
+  var bracket_15_max = 50400;
+  var bracket_25_max = 130150;
+  var bracket_28_max = 210800;
+  var bracket_33_max = 413350;
+  var bracket_35_max = 441000;
+  
+// if in 10% tax bracket
+  if (income <= bracket_10_max){
+    tax = income * 0.10;
+    taxRate = 10;
+  }
+// if in 15% tax bracket
+  else if (income <= bracket_15_max) {
+    tax = bracket_10_max * 0.10 + (income - bracket_10_max) * 0.15;
+    taxRate = 15;
+  }
+// if in 25% tax bracket
+  else if (income <= bracket_25_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 + (income - bracket_15_max) * 0.25;
+    taxRate = 25;
+  }
+// if in 28% tax bracket
+  else if (income <= bracket_28_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (income - bracket_25_max) * 0.28;
+    taxRate = 28;
+  }
+// if in 33% tax bracket
+  else if (income <= bracket_33_max) {
+    tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+          (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+          (income - bracket_28_max) * 0.33;
+    taxRate = 33;
+  }
+// if in 35% tax bracket
+  else if (income <= bracket_35_max) {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (income - bracket_33_max) * 0.35;
+     taxRate = 35;
+  }
+// if in 39.6% tax bracket
+  else {
+     tax = bracket_10_max * 0.10 + (bracket_15_max - bracket_10_max) * 0.15 +
+           (bracket_25_max - bracket_15_max) * 0.25 + (bracket_28_max - bracket_25_max) * 0.28 +
+           (bracket_33_max - bracket_28_max) * 0.33 + (bracket_35_max - bracket_33_max ) * 0.35 + (income - bracket_35_max) * .396;
+     taxRate = 39.6;
+  }//end of nested if
  
 
              
@@ -278,8 +422,8 @@
               document.getElementById("filingStatus").selectedIndex = 0;
               
              //INSERT YOUR CODE BELOW
-
-
+            document.getElementById("taxEstimate").innerHTML = "";
+            document.getElementById("taxBracket").innerHTML = "";
 
 
       }//end of clearButton function
